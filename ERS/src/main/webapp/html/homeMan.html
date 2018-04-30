@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-11">
+                <h1>Welcome Home, Manager</h1>
+            </div>
+            <div class="col-sm-1">
+                <form action="logout.do" method="POST">
+                    <br>
+                    <button class="btn btn-primary" onclick="submit">Log Out</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        Your information:
+        <ul id="myInfo">
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+        <button class="btn btn-primary" id="theH3">View all employees</button>
+        <br>
+    </div>
+    <div class="container-fluid">
+        <br>
+        <table class="table table-striped" id="theemptable">
+            <thead id="theemphead">
+                <th>User ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </thead>
+            <tbody id="theempbody">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="container-fluid">
+        <h3 id="anH3">Requests will appear in the table below:</h3>
+        <button class="btn btn-primary" id="manAllReq">View all resolved requests.</button>
+        <button class="btn btn-primary" id="manPenReq">View all pending requests.</button>
+        <br>
+    </div>
+
+    <div class="container-fluid">
+        <br>
+        <div class="row">
+            <div class="col-sm-9">
+                <input type="text" id="requester" placeholder="Enter employee ID" class="form-control">
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-primary" id="manEmpReq">View requests from a given employee</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <br>
+        <div class="row">
+            <div class="col-sm-10">
+                <input type="text" id="requestID" placeholder="Enter request ID" class="form-control">
+            </div>
+            <div class="col-sm-2">
+                <button class="btn btn-primary" id="appReq" value="APPROVED">Approve</button>
+                <button class="btn btn-primary" id="DenReq" value="DENIED">Deny</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <br>
+        <table class="table table-striped" id="thetable">
+            <thead>
+                <th>Request ID</th>
+                <th>Requester</th>
+                <th>Reviewer ID</th>
+                <th>Amount</th>
+                <th>Request Date</th>
+                <th>Review Date</th>
+                <th>Status</th>
+                <th>Purpose</th>
+            </thead>
+
+            <tbody id="thebody">
+            </tbody>
+    </div>
+    <script type="text/javascript" src="../js/manager.js"></script>
+</body>
+
+</html>
