@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 1804_apr_jta
 
 Welcome to my branch of 1804_apr_jts.
@@ -14,3 +15,6 @@ This project was mostly about setting up a Oracle DB with Amazon's AWS platform.
 ## ERS (AKA Project 1)
 
 This project is about Reimbursment System. The project requires a client side, middleware, and server side. Development is in progress.
+=======
+# Revature_Projects
+>>>>>>> 4829a1a8f180c8c2d87d1b3d6835a2276ea931ab
