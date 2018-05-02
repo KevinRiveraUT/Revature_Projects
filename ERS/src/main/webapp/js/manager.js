@@ -34,7 +34,7 @@ function ApproveRequest() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/modareq.ajax?requestid="+aRequestID +"&status=APPROVED", true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/modareq.ajax?requestid="+aRequestID +"&status=APPROVED", true);
 
     //Sending request to endpoint
     xhttp.send();
@@ -57,7 +57,7 @@ function DenyRequest() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/modareq.ajax?requestid="+aRequestID +"&status=DENIED", true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/modareq.ajax?requestid="+aRequestID +"&status=DENIED", true);
 
     //Sending request to endpoint
     xhttp.send();
@@ -91,7 +91,7 @@ function showMyInfo() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/getuser.ajax", true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/getuser.ajax", true);
 
     //Sending request to endpoint
     xhttp.send();
@@ -112,7 +112,7 @@ function getAllEmp() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/getallemp.ajax", true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/getallemp.ajax", true);
 
     //Sending request to endpoint
     xhttp.send();
@@ -185,7 +185,7 @@ function manAllReq() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/manallreq.ajax", true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/manallreq.ajax", true);
 
     //Sending request to endpoint
     xhttp.send();
@@ -206,7 +206,7 @@ function manPenReq() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/mancertreq.ajax?status=PENDING", true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/mancertreq.ajax?status=PENDING", true);
 
     //Sending request to endpoint
     xhttp.send();
@@ -280,7 +280,7 @@ function manCertEmp() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/mancertemp.ajax?requester=" + aRequester, true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/mancertemp.ajax?requester=" + aRequester, true);
 
     //Sending request to endpoint
     xhttp.send();

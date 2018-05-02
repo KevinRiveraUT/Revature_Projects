@@ -30,7 +30,7 @@ function getPenReq() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/certreq.ajax?status=PENDING", true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/certreq.ajax?status=PENDING", true);
 
     //Sending request to endpoint
     xhttp.send();
@@ -51,7 +51,7 @@ function getDenReq() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/certreq.ajax?status=DENIED", true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/certreq.ajax?status=DENIED", true);
 
     //Sending request to endpoint
     xhttp.send();
@@ -72,7 +72,7 @@ function getAppReq() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/certreq.ajax?status=APPROVED", true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/certreq.ajax?status=APPROVED", true);
 
     //Sending request to endpoint
     xhttp.send();
@@ -142,7 +142,7 @@ function insertRequest() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/insertreq.ajax?amount=" + amount + "&purpose=" + purpose, true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/insertreq.ajax?amount=" + amount + "&purpose=" + purpose, true);
 
     //Sending request to endpoint
     xhttp.send();
@@ -183,7 +183,7 @@ function modifyUser() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/modifyuser.ajax?" + parameters, true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/modifyuser.ajax?" + parameters, true);
 
     //Sending request to endpoint
     xhttp.send();
@@ -217,7 +217,7 @@ function showMyInfo() {
         }
     };
     //Opening connection for endpoint
-    xhttp.open("POST", "http://localhost:8080/ERS/html/getuser.ajax", true);
+    xhttp.open("POST", "http://localhost:8090/ERS/html/getuser.ajax", true);
 
     //Sending request to endpoint
     xhttp.send();
