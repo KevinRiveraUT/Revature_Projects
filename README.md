@@ -1,5 +1,8 @@
+# Previous repository and branch
 
-# Revature Projects
+[yuvi4715's batch repository](https://github.com/yuvi4715/1804_apr_jta/tree/KevinRiveraUT)
+
+## Revature Projects
 
 Welcome to my branch of 1804_apr_jts.
 Here you'll find the projects and assignments I've worked on while training with Revature.
@@ -14,7 +17,6 @@ This project was mostly about setting up a Oracle DB with Amazon's AWS platform.
 
 ## ERS (AKA Project 1)
 
-This project is about Reimbursment System. The project requires a client side, middleware, and server side. Development is in progress.
-
-#### Previous repository and branch
-https://github.com/yuvi4715/1804_apr_jta/tree/KevinRiveraUT
+This project is about Reimbursment System. The project requires a client side, middleware, and server side. The web application has a login screen where a manager or a user can login. 
+Once in the homepage, a user can update their information, create a reiumbursment ticket, and view their pending and resolved requests.
+When a manager logs in, he can view his information, view all resolved requests, view all pending requests, view all requests made by a single employee
