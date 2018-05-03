@@ -44,4 +44,4 @@ hibernatetest/target/m2e-wtp/web-resources/META-INF/maven/com.revature/hibernate
 hibernatetest/target/m2e-wtp/web-resources/META-INF/maven/com.revature/hibernatetest/pom.properties
 hibernatetest/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
 JenkinsTest
-hibernatetest/src/main/resources/hibernate.cfg.xml
+hibernatetest/src/resources/hibernate.cfg.xml
