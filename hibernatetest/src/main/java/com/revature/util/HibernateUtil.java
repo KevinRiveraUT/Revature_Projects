@@ -1,6 +1,5 @@
 package com.revature.util;
 
-import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
@@ -13,12 +12,9 @@ public class HibernateUtil{
     }
 
     public static SessionFactory getSession(){
-        try {
+        if(mysession == null){
             mysession = new Configuration().configure().buildSessionFactory();
-            return mysession;
-        } catch (HibernateException e) {
-            //TODO: handle exception
         }
-		return null;
+        return mysession;
     }    
 }
