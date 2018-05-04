@@ -1,0 +1,10 @@
+1) Used Git keep track of the changes made in the project files and frequently pushed the code to Github
+2) Used the Bootstrap 3 framework to stylize the web application.
+3) Utilized AJAX techniques to asynchronously to send and retrieve data from the server-side
+4) Implemented the Data Access Object (DAO) design pattern to retrieve, insert, and update data in the database.
+5) Created two servlets to handle the requests and responses to and from the client-side, and acted as a middle layer between the client-side and server-side
+6) Utilized JavaScript to make the web application dynamic through DOM manipulation.
+7) Utilized the Jackson API to create JSON string representations of the objects returned by the DAO Service class.
+8) Created a test class with JUnit to test all the methods of the DAO implementation class.
+9) Created Stored Procedures, Triggers, and Sequences in the database to increase security and 
+10) Utilized the DOM API to remove and insert elements into the HTML, such as tables and unordered lists.
