@@ -2,7 +2,6 @@ package com.revature.ers.model;
 
 import java.io.Serializable;
 
-
 public class ERS_User implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
