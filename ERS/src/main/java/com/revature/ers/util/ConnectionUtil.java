@@ -26,25 +26,26 @@ public class ConnectionUtil {
 		InputStream in = null;
 		try {
 			Properties props = new Properties();
-			in = new FileInputStream("/var/lib/jenkins/workspace/ERS/ERS/src/main/resources/db.properties");
-			props.load(in);
+			//in = new FileInputStream("/var/lib/jenkins/workspace/ERS/ERS/src/main/resources/db.properties");
+			//props.load(in);
 			return DriverManager.getConnection("jdbc:oracle:thin:@jta1804.cj5ag5bbxgrs.us-east-2.rds.amazonaws.com:1521:orcl", "ERS", "ERS1");
 			
 		} catch (SQLException e){
 			log.error(e.getMessage());
 			log.error("SQL State: " + e.getSQLState());
 			log.error("Error Code: " + e.getErrorCode());
-		} catch (FileNotFoundException e){
+		} catch (Exception e){
 			e.printStackTrace();
-		} catch (IOException e){
-			e.printStackTrace();
-		} finally {
-			try {
-				in.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
+		} 
+		// catch (IOException e){
+		// 	e.printStackTrace();
+		// } finally {
+		// 	try {
+		// 		in.close();
+		// 	} catch (IOException e) {
+		// 		e.printStackTrace();
+		// 	}
+		// }
 		
 		return null;
 	}
