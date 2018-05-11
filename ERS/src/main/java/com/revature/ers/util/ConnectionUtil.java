@@ -28,7 +28,7 @@ public class ConnectionUtil {
 			Properties props = new Properties();
 			in = new FileInputStream("/var/lib/jenkins/workspace/ERS/ERS/src/main/resources/db.properties");
 			props.load(in);
-			return DriverManager.getConnection(props.getProperty("url"), props.getProperty("username"), props.getProperty("password"));
+			return DriverManager.getConnection("jdbc:oracle:thin:@jta1804.cj5ag5bbxgrs.us-east-2.rds.amazonaws.com:1521:orcl", "ERS", "ERS1");
 			
 		} catch (SQLException e){
 			log.error(e.getMessage());
